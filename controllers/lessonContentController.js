@@ -61,7 +61,7 @@ exports.updateContent = async (req, res) => {
     content.content_text = content_text || content.content_text;
     content.content_type = content_type || content.content_type;
     content.content_order = content_order || content.content_order;
-    content.content_video = content_video || content.content_video;
+    content.content_video = content_video || "";
 
     await content.save();
 
